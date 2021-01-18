@@ -4,9 +4,9 @@
 	 "time": "2PM",
 	 "description": "I am event 1"
 	}, 
-	{"name": "Event2", 
-	 "date": "2021-10-09",
+	{"name": "Info Session", 
+	 "date": "2021-01-28",
 	 "time": "7PM",
-	 "description": "I am event 2"
+	 "description": "Come to our info session to learn more about Cal ACLU!"
 	}
 ]
