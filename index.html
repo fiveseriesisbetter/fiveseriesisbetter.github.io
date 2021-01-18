@@ -1,0 +1,129 @@
+<html>
+<link rel="stylesheet" href="./main.css">
+	<head>
+		<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Raleway" />
+		<meta charset="utf-8" style = "font-family:Raleway">
+		<title>Cal ACLU</title>
+		<meta name="description" content="This field contains information about your page. It is usually around two sentences long.">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+	</head>
+	<body>
+		<img src="./img/ACLUNC.png", class = "center", width = "17%", style = "margin-top: 3em">
+		<div class="topnav">
+			<a href="./Calendar.html">Calendar</a>
+			<a href="./Team.html">Meet the Team</a>
+			<div class="dropdown">
+				<div> Committees </div>
+				<div class="dropdown-content">
+				   <a href="./CJR.html">Criminal Justice</a>
+			       <a href="./GenEq.html">Gender Equity</a>
+			       <a href="./Imm.html">Immigration</a>
+			       <a href="./T&P.html">Tech & Privacy</a>
+			    </div>
+			</div>
+
+		    <div class="dropdown">
+		      <div> Our Work </div>
+		      <div class="dropdown-content">
+		        <a href="./Education.html">Education</a>
+		        <a href="./Activism.html">Activism</a>
+		        <a href="./Publications.html">Publications</a>
+		      </div>
+		    </div>
+
+		    <a href="./index.html">Home</a>
+		</div>
+
+		
+		<h1><strong>CAL ACLU</strong></h1>
+		<p style = "font-size: 18px;"> University of California, Berkeley Chapter of the American Civil Liberties Union. </p>
+		<img src = "./img/mainpage1.png", class = "fill">
+		<div style = "background-color:#EEF9FF; ">
+			<h3 > <b> ABOUT </b> </h3>
+			<p> Cal ACLU is a collegiate chapter of the American Civil Liberties Union (ACLU). The ACLU's stated mission is to defend and preserve the individual rights and liberties guaranteed by the Constitution and laws of the United States. As a nonpartisan organization, the ACLU is also the nation's largest non-profit law firm and one of the leading activist organizations. Some of the ACLU's most famous legal battles include Japanese-American internment during WWII, the desegregation struggle, women's reproductive rights, and numerous free speech issues.
+			<br>
+			As CalACLU, our work follows and complements that of the overarching ACLU. We work to educate and advocate for students and local communities regarding current events, legislation, and major issues. We remain in close contact with the ACLU of Northern California, as well as the Berkeley/North East Bay Chapter of the ACLU. We host panels and workshops, rallies and events, and aim to advocate for civil liberties through our work.
+			</p>
+		</div>
+		<img src = "./img/mainpage2.png", class = "fill", width="100%">
+
+		<h3> <b> COMMITTEES </b></h3>
+		<div class="row">
+			<div class="column">
+				<img src="./img/mainpageCJR.png" alt="Criminal Justice Reform" style="width:100%">
+			</div>
+			<div class="column">
+				<img src="./img/mainpageGenEq.png" alt="Gender Equity" style="width:100%">
+			</div>
+			<div class="column">
+				<img src="./img/mainpageImm.png" alt="Immigration Response" style="width:100%">
+			</div>
+			<div class="column">
+				<img src="./img/mainpageT&P.png" alt="Technology and Privacy" style="width:100%">
+			</div>
+		</div>
+
+		<div class="row">
+			<p class= "committee", style = "background-color:#FFFFFF"> CRIMINAL JUSTICE REFORM
+				<br>
+				<br>
+				<button class="blackbutton"><a href="./CJR.html">Learn More</a></button>
+			</p>
+			<p class= "committee", style = "background-color:#3060AA; color:#FFFFFF"> GENDER EQUITY
+				<br>
+				<br>
+				<button><a href="./GenEq.html", style="color: black">Learn More</a></button>
+			</p>
+			<p class= "committee", style = "background-color:#FF5555; color:white"> IMMIGRATION RESPONSE
+				<br>
+				<br>
+				<button><a href="./Imm.html", style="color: black">Learn More</a></button>
+			</p>
+			<p class= "committee", style = "background-color:#EEF9FF;"> TECHNOLOGY AND PRIVACY
+				<br>
+				<br>
+				<button class="blackbutton"><a href="./T&P.html">Learn More</a></button>
+			</p>
+			</div>
+		</div>
+
+		<p id="events"> </p>
+    <script>
+
+        function str(event) {
+        	if (new Date(event.date) > Date.now()) {
+        		console.log(event.name);
+        		return event.name;
+        	}
+        	return "";
+        }
+
+        var xmlhttp = new XMLHttpRequest();
+		xmlhttp.onreadystatechange = function() {
+		  if (this.readyState == 4 && this.status == 200) {
+		    var Events = JSON.parse(this.responseText);
+		    Events.forEach(element => {
+	        	document.getElementById('events').innerHTML = document.getElementById('events').innerHTML + str(element);
+	        });
+		  }
+		};
+		xmlhttp.open("GET", "./events.txt", true);
+		xmlhttp.send();
+
+    	/* var xmlhttp = new XMLHttpRequest();
+    	xmlhttp.onreadystatechange = function() {
+    		if (this.readyState == 4 && this.status == 200) {
+		    var Events = JSON.parse(this.responseText);
+		    Events.forEach(element => {
+	        	document.getElementById('target-id').innerHTML = document.getElementById('target-id').innerHTML + str(element);
+	        });
+
+		  }
+		};
+		xmlhttp.open("GET", "events.txt", true);
+		xmlhttp.send(); */
+
+        </script>
+		
+	</body>
+</html>

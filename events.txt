@@ -1,0 +1,12 @@
+[
+	{"name": "Event1", 
+	 "date": "2020-10-09",
+	 "time": "2PM",
+	 "description": "I am event 1"
+	}, 
+	{"name": "Event2", 
+	 "date": "2021-10-09",
+	 "time": "7PM",
+	 "description": "I am event 2"
+	}
+]

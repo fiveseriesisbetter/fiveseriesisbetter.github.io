@@ -1,0 +1,127 @@
+* {
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  line-height: 2em;
+}
+
+a {color: white; text-decoration: none; font-size: 1.3em;}
+
+p { font-family: Raleway; margin-left:22%; text-align:center; margin-right:22%; line-height:2em; margin-bottom:-5px; padding-bottom: 30px; font-size: 17px;}
+
+h1 {color:#3060AA; text-align:center; font-family: Arial; font-size: 4.5em; margin-bottom: -6px; }
+
+h3 {color:#3060AA; text-align:center; font-family: Arial; font-size: 2.5em; padding-top: 4em; margin-top: -5px; margin-bottom:1em;}
+
+button {margin-top:3.5em; font-family:Raleway; font-size:0.7em; padding-top:0.8em; padding-bottom:0.8em; padding-left:0.8em; padding-right:0.8em;}
+
+li {font-size: 12px; font-family: Raleway; margin-left:20%; text-align:center; margin-right:20%; margin-bottom:-5px;}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.
+.fill {
+  margin:auto;
+  width: 100%;
+}
+.column {
+  float: left;
+  width: 25%;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.blackbutton {
+  background-color: black; 
+  color: white
+}
+.bluebutton {
+  background-color: #3060AA; 
+  color: white;
+  margin-top: -10px;
+  margin-left: 44%;
+}
+.committee {
+  float:left; 
+  margin:auto; 
+  width:25%; 
+  padding-top:3em; 
+  padding-bottom:5em; 
+  margin-top:-1px; 
+  font-size:1.3em;
+}
+
+.middleDivide{
+  float:left;
+  width:45%;
+}
+
+
+
+.topnav {
+  margin-right: 42em;
+  margin-bottom: 1em;
+  height: 65px;
+  z-index: 4;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a, .dropdown {
+  float: right;
+  color: black;
+  text-align: center;
+  padding: 8px 8px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  text-decoration: none;
+  font-size: 14px;
+  font-family: Raleway;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover, .dropdown:hover, .dropdown-content a:hover {
+  color: #53BDE4;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #53BDE4;
+  color: white;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  font-family: Raleway;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  background-color: white;
+  display: none;
+  position: absolute;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  background-color: white;
+  margin:auto;
+  padding: 0px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  width: 140%;
+
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
