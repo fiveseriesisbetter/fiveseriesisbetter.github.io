@@ -6,7 +6,7 @@
 	}, 
 	{"name": "Info Session", 
 	 "date": "2021-01-28",
-	 "time": "7PM",
-	 "description": "Come to our info session to learn more about Cal ACLU!"
+	 "time": "8-9PM",
+	 "description": "Hey everyone! With the Spring 2021 semester underway, we are excited to announce our information session on Thursday, January 28th! If you are interested in social justice, civil liberties, or even just want more information, come on by our Zoom event. At the event, you'll learn about joining the club and all that we try to do for the betterment of our community. Currently we have 4 committees including: Tech & Privacy, Gender Equity, Criminal Justice, and Immigration. See you all there!"
 	}
 ]

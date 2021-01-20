@@ -5,7 +5,7 @@
 		<meta charset="utf-8" style = "font-family:Raleway">
 		<title>Cal ACLU</title>
 		<meta name="description" content="This field contains information about your page. It is usually around two sentences long.">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	</head>
 	<body>
 		<img src="./img/ACLUNC.png", class = "center", width = "17%", style = "margin-top: 3em">
@@ -89,6 +89,13 @@
 
 		<h3>Upcoming Events</h3>
 		<div id="events"> </div>
+
+		<div class="middleDivide"> <p> Subscribe to our newsletter! </p> </div>
+		<div class="middleDivide"> 
+			<p><a href="https://www.facebook.com/CalACLU/", style="color: black">Connect with us on facebook</a> <br>
+			<a href="https://www.instagram.com/calaclu/", style="color:black; font-size: 17px">Instagram @calaclu</a></p>
+		</div>
+        
     <script>
 
         var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
@@ -101,6 +108,7 @@
         	return "";
         }
 
+
         var xmlhttp = new XMLHttpRequest();
 		xmlhttp.onreadystatechange = function() {
 		  if (this.readyState == 4 && this.status == 200) {
@@ -112,19 +120,6 @@
 		};
 		xmlhttp.open("GET", "./events.txt", true);
 		xmlhttp.send();
-
-    	/* var xmlhttp = new XMLHttpRequest();
-    	xmlhttp.onreadystatechange = function() {
-    		if (this.readyState == 4 && this.status == 200) {
-		    var Events = JSON.parse(this.responseText);
-		    Events.forEach(element => {
-	        	document.getElementById('target-id').innerHTML = document.getElementById('target-id').innerHTML + str(element);
-	        });
-
-		  }
-		};
-		xmlhttp.open("GET", "events.txt", true);
-		xmlhttp.send(); */
 
         </script>
 		
