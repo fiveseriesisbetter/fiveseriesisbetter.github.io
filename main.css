@@ -129,3 +129,13 @@ li {font-size: 12px; font-family: Raleway; margin-left:20%; text-align:center; m
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {display: block;}
 
+.bottomnav {
+  background-color: #3060AA;
+  width: 100%;
+  height: 10em;
+  z-index: 4;
+  padding-top: 30px;
+  float: left;
+  margin-top: 3em;
+}
+
