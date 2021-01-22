@@ -61,9 +61,27 @@ li {font-size: 12px; font-family: Raleway; margin-left:20%; text-align:center; m
   font-size:1.3em;
 }
 
-.middleDivide{
+.middleDivide {
   float:left;
   width:45%;
+}
+
+.headshots {
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-bottom: -13%;
+}
+
+.cleardiv {
+  clear: both;
+  margin-bottom: 5em;
+}
+
+.BoardQuestions {
+  color: #3060AA;
 }
 
 
